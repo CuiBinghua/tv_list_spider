@@ -15,8 +15,8 @@ $ yum install -y firefox xorg-x11-server-Xvfb
 注意，tv_list_spider.conf这个配置文件需要以UTF-8编码格式保存。  
 在[program]这一段中：  
 type表示自定义节目类型；  
-tags表示感兴趣的标签，多个标签之间以逗号间隔；如果tags为空，则抓取所有数据；
-exclude_tags表示不感兴趣的标签（优先级高于tags），多个标签之间以逗号间隔；如果exclude_tags为空，则不会排除任何数据；  
+tags表示感兴趣的标签，多个标签之间以逗号间隔（如果tags为空，则抓取所有数据）；  
+exclude_tags表示不感兴趣的标签（优先级高于tags），多个标签之间以逗号间隔（如果exclude_tags为空，则不会排除任何数据）；  
 在[mail]这一段中：  
 smtpserver表示所用邮箱的SMTP服务器地址（需要自行设置！！！）  
 username表示所用邮箱的用户名（需要自行设置！！！）  
@@ -38,5 +38,5 @@ $ cat tv_list.txt
 
 
 # 5. 参考资料
-http://plough-man.com/?p=379
+http://plough-man.com/?p=379  
 https://github.com/SongJLG/TVPL_Spider/blob/master/spicode/TVPLSpider.py
