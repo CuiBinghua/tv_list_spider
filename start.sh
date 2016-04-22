@@ -1,0 +1,1 @@
+nohup xvfb-run python tv_list_spider.py > spider.log &
